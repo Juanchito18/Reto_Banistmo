@@ -4,8 +4,12 @@ Feature: Descargar contrato
   Para leer las condiciones de contrato.
 
 
- 
+  @tag1
   Scenario: Descarga exitosa
-    Given que el usuario esta en la pagina Banistmo
-    When  edescarga el contrato en pdf
-    Then el pvisualizara el mensaje Contrato de Tarjetas de Crédito.
+    Given que el usuario esta en la pagina Banistmo.
+    When descarga el contrato en pdf
+    Then el podra visualizar el mensaje <mensaje>
+    
+    Examples: 
+      | mensaje |
+      |Contrato de Tarjetas de Crédito.|

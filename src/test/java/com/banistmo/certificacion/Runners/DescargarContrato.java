@@ -7,9 +7,9 @@ import cucumber.api.SnippetType;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features="src/test/resourses/features/contratocredito.feature"
-,glue="com.banistmo.certification.Reto_Banistmo.stepdefinitions"
-,snippets=SnippetType.CAMELCASE //, tags="@tag2"
+@CucumberOptions(features="src/test/resources/features/descargarcontrato.feature"
+,glue="com.banistmo.certificacion.StepDefinitions"
+,snippets=SnippetType.CAMELCASE
 )
 
 
